@@ -16,7 +16,8 @@
 
         <label for="New">New thing to do</label>
         <br>
-        <input type="text">  <button>Add to List</button>
+        <input type="text" v-model="newToDo">  
+        <button @click="addToDo" >Add to List</button>
 
         <ul>
             <li v-for="(todo, indice) in toDos">{{todo.item}} <span @click="eliminaToDo(indice)"><i class="fas fa-eraser"></i></span></li> 

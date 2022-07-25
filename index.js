@@ -27,6 +27,11 @@ var app = new Vue (
         methods : {
              eliminaToDo (indice){
                 this.toDos.splice(indice,1)
+             },
+
+             addToDo () {
+                this.newToDo= ' '
+                this.toDos.push(this.newToDo)
              }
             }
 
