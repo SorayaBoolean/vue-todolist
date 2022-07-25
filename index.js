@@ -5,13 +5,21 @@ var app = new Vue (
 
             newToDo :' ',
             toDos : [
-                'Andare in escursione sub',
-                'Vedere le balene',
-                'Dormire in tenda',
-                'Andare sul Teide',
-                'Mangiare in un guachinche',
-                'Guidare una Mustang',
-                'Volare in paracadute'
+               {item:'Vedere le balene'
+            },
+
+               {item:'Andare in escursione sub'
+            },
+               {item:'Dormire in tenda'
+            },
+               {item:'Andare sul Teide'
+            },
+               {item:'Mangiare in un guachinche'
+            },
+               {item:'Guidare una Mustang'
+            },
+               {item:'Volare in paracadute'
+            } 
             ]
         },
 
@@ -22,3 +30,10 @@ var app = new Vue (
         }
 
 )
+
+                
+                
+                
+                
+                
+                
