@@ -6,6 +6,7 @@ var app = new Vue (
             newToDo :' ',
             toDos : [
                {item:'Vedere le balene'
+               
             },
 
                {item:'Andare in escursione sub'
@@ -24,7 +25,9 @@ var app = new Vue (
         },
 
         methods : {
-            
+             eliminaToDo (indice){
+                this.toDos.splice(indice,1)
+             }
             }
 
         }
