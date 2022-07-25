@@ -5,21 +5,27 @@ var app = new Vue (
 
             newToDo :' ',
             toDos : [
-               {item:'Vedere le balene'
-               
+               {item:'Vedere le balene',
+                done: true
             },
 
-               {item:'Andare in escursione sub'
+               {item:'Andare in escursione sub',
+               done: true
             },
-               {item:'Dormire in tenda'
+               {item:'Dormire in tenda',
+               done: false
             },
-               {item:'Andare sul Teide'
+               {item:'Andare sul Teide',
+               done: true
             },
-               {item:'Mangiare in un guachinche'
+               {item:'Mangiare in un guachinche',
+               done: false
             },
-               {item:'Guidare una Mustang'
+               {item:'Guidare una Mustang',
+               done: true
             },
-               {item:'Volare in paracadute'
+               {item:'Volare in paracadute',
+               done: true
             } 
             ]
         },
@@ -30,8 +36,9 @@ var app = new Vue (
              },
 
              addToDo () {
-                this.newToDo= ' '
-                this.toDos.push(this.newToDo)
+                this.newToDoo={item:this.newToDo}  
+                this.toDos.push(this.newToDoo)
+                this.newToDo= ' ';
              }
             }
 
